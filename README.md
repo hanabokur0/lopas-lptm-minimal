@@ -176,3 +176,22 @@ to:
 * **history-aware layer stability**
 
 In practical terms, it is the step from a static threshold model to a lightweight phase-transition detector.
+
+## Cloudflare Worker API
+
+Deployed endpoint:
+- `GET /`
+- `POST /v1/eval`
+
+Example request body:
+
+```json
+{
+  "doq": 0.70,
+  "cci": 0.64,
+  "hgd": 0.58,
+  "trs": 0.62,
+  "prev_pst": 0.63,
+  "prev_prev_pst": 0.61,
+  "prev_layer": "L1"
+}
